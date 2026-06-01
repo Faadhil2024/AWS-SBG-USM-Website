@@ -18,14 +18,18 @@ export const SOCIAL_LINKS = {
   meetup:    "https://www.meetup.com/aws-cloud-club-usm/",
 } as const;
 
-export const NAV_ITEMS = [
+export const NAV_ITEMS: {
+  label: string;
+  href: string;
+  highlight?: boolean;
+}[] = [
   { label: "About",     href: "#about" },
   { label: "Events",    href: "#events" },
   { label: "Team",      href: "#team" },
   { label: "Gallery",   href: "#gallery" },
   { label: "Resources", href: "#resources" },
   { label: "Join Us",   href: "#join", highlight: true },
-] as const;
+];
 
 export const COMMUNITY_STATS = [
   { value: "200+",  label: "Active Members" },

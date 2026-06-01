@@ -55,6 +55,7 @@ export const teamMembers: TeamMember[] = [
     role: "Co-Lead, Creative Media",
     batch: "2025/2026",
     school: "School of Computer Sciences",
+    photo: "/images/Faadhil.jpeg",
     linkedin: "https://www.linkedin.com/in/faadhil-mohiadeen-a57076373/",
     github: "https://github.com/Faadhil2024",
   },
