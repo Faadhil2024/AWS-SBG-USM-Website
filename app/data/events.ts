@@ -8,7 +8,7 @@ export const events: Event[] = [
     date: "2026-06",
     
     location: "School of Computer Sciences, USM",
-    type: "KickStart 2026",
+    type: "Kickstart",
     status: "upcoming",
     description:"Ready to kickstart your AWS journey but not sure where to begin? Say less — we've got you!",
     tags: ["AWS"],
