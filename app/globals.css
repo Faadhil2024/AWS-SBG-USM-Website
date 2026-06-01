@@ -3,31 +3,96 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg:             #0A0E1A;
+  --bg-surface:     #0F1629;
+  --bg-elevated:    #162035;
+  --aws-orange:     #FF9900;
+  --accent-blue:    #4F8EF7;
+  --text-primary:   #F0F4FF;
+  --text-secondary: #A8B4CC;
+  --text-muted:     #5A6A84;
+  --border:         #1E2D4F;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--bg);
+}
+
+body::-webkit-scrollbar       { width: 6px; }
+body::-webkit-scrollbar-track { background: var(--bg); }
+body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+@layer components {
+  .glass {
+    background: rgba(15, 22, 41, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(30, 45, 79, 0.5);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #FF9900 0%, #FFB84D 50%, #4F8EF7 100%);
+  }
+
+  .gradient-text-blue {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #4F8EF7 0%, #00D2FF 100%);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-aws-orange text-brand-bg font-semibold
+           px-6 py-3 rounded-lg text-sm
+           hover:bg-aws-orange-light
+           transition-all duration-200
+           focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-aws-orange;
+    box-shadow: 0 0 30px rgba(255,153,0,0.2);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-text-primary font-semibold
+           border border-brand-border
+           px-6 py-3 rounded-lg text-sm
+           hover:border-brand-border-bright
+           hover:bg-brand-elevated
+           transition-all duration-200
+           focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-aws-orange;
+  }
+
+  .card {
+    @apply bg-brand-surface border border-brand-border
+           rounded-xl p-6
+           hover:border-brand-border-bright
+           transition-all duration-300;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3);
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
