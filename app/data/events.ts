@@ -30,7 +30,7 @@ export const events: Event[] = [
     date: "2026-04-04",
     time: "10:30 AM – 12:30 PM",
     location: "Webex, USM",
-    type: "talk",
+    type: "Talk",
     status: "past",
     description:
       "Curious about AI that can code, plan, and build? Join 𝐀𝐠𝐞𝐧𝐭𝐢𝐜 𝐀𝐈 𝐕𝐢𝐛𝐞 𝐂𝐨𝐝𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐊𝐢𝐫𝐨 and explore the power of agentic development.",
