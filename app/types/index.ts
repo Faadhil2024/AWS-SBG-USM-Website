@@ -18,11 +18,13 @@ export interface Event {
 }
 
 export type EventType =
-  | "workshop"
-  | "talk"
+  | "Workshop"
+  | "Talk"
   | "lab"
   | "networking"
   | "hackathon"
+  | "Kickstart"
+  | "Builder Session"
   | "other";
 
 export interface Speaker {
