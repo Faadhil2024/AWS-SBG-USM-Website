@@ -67,7 +67,7 @@ export const teamMembers: TeamMember[] = [
     role: "Lead, Events",
     batch: "2025/2026",
     school: "School of Computer Sciences",
-    photo: "/images/ivan Tham.jpg",
+    photo: "/images/Ivan Tham.jpg",
     linkedin: "https://www.linkedin.com/in/ivan-tham-aa159b298/",
     github: "https://github.com",
   },
