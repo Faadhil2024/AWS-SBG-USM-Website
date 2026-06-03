@@ -108,7 +108,7 @@ const resources: ResourceCategory[] = [
         title: "AWS SBG USM GitHub",
         description:
           "Workshop slides, code samples, and project templates from our events.",
-        url: "https://github.com",
+        url: "https://github.com/awscloudclub-usm",
         
       },
       {

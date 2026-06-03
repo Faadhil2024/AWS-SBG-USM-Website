@@ -5,7 +5,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "captain-1",
     name: "Loo Chi Hao",
-    role: "Captain",
+    role: "Leader",
     batch: "2025/2026",
     school: "School of Computer Sciences",
     photo: "/images/Chi-hao.png",
@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "captain-2",
     name: "Koay Chun Keat",
-    role: "Captain",
+    role: "Leader",
     batch: "2025/2026",
     school: "School of Computer Sciences",
     photo: "/images/chun-keat.png",
@@ -41,7 +41,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "creative-2",
     name: "Najihah Hanani",
-    role: "Creative Media lead",
+    role: "Lead, Creative Media",
     batch: "2025/2026",
     school: "School of Computer Sciences",
     photo: "/images/najihah-hanani.png",
@@ -64,7 +64,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "events-1",
     name: "Ivan Tham",
-    role: "Events Lead",
+    role: "Lead, Events",
     batch: "2025/2026",
     school: "School of Computer Sciences",
     photo: "/images/ivan Tham.jpg",
@@ -74,7 +74,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "events-2",
     name: "Lim Zhe",
-    role: "Events Coordinator",
+    role: "Co-Lead Events",
     batch: "2025/2026",
     school: "School of Computer Sciences",
     photo: "/images/lim-zhe.jpg",

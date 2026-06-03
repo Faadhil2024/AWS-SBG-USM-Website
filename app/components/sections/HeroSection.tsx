@@ -167,7 +167,7 @@ export default function HeroSection() {
           className="text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ color: "rgba(255,255,255,0.55)" }}
         >
-          AWS Student Builders Group USM is the official AWS community at
+          AWS Student Builder Group USM is the official AWS community at
           Universiti Sains Malaysia. We run workshops, tech talks, and cloud labs.
         </motion.p>
 

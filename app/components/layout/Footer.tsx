@@ -26,9 +26,11 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-md bg-aws-gradient flex items-center justify-center">
-                <span className="text-brand-bg font-bold text-xs">
-                  SBG
-                </span>
+                <img
+                  src="/images/AWS-SBG-Logo-Black.png"
+                  alt="AWS SBG Logo"
+                  className="w-5 h-5 object-contain"
+                />
               </div>
 
               <span className="font-semibold text-text-primary">
